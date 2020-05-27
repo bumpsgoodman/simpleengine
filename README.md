@@ -1,0 +1,62 @@
+# Simple Engine Rule
+
+
+
+## Scene
+
+### Scene 작성
+
+기본적으로 IScene을 상속받아 사용
+
+```bash
+class SomeScene final : public IScene
+```
+Init(), Clear() 함수만 오버로딩 후 작성
+```bash
+void SomeScene::Init() { }
+void SomeScene::Clear() { }
+```
+
+### Scene 등록
+
+Game::Init() 함수에서 SceneManager를 통해 Scene 등록
+
+```bash
+void Game::Init()
+{
+    .
+    .
+    .
+    .
+    SceneManager::GetInstance()->LoadScene<Sokoban>("Sokoban");
+}
+```
+
+## GameObject
+
+GameObject는 기본적으로 new 할당자를 사용
+
+Component 추가 시 AddComponent() 함수 사용
+
+```bash
+GameObject obj = new GameObject();
+obj->AddComponent(someComponent);
+```
+
+## Component
+
+### Component 작성
+
+기본적으로 IComponent를 상속받아 사용
+
+```bash
+class SomeComponent final : public IComponent
+```
+
+## 프로그램 종료
+
+아래 함수를 사용하여 프로그램 종료
+
+```bash
+Apllication::Exit()
+```
