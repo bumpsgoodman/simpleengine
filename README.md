@@ -1,6 +1,6 @@
 # Simple Engine Rule
 
-
+기본적으로 모든 객체는 new를 사용하여 객체화
 
 ## Scene
 
@@ -34,8 +34,6 @@ void Game::Init()
 
 ## GameObject
 
-GameObject는 기본적으로 new 할당자를 사용
-
 Component 추가 시 AddComponent() 함수 사용
 
 ```bash
@@ -47,13 +45,11 @@ obj->AddComponent(someComponent);
 
 ### Component 작성
 
-기본적으로 IComponent를 상속받아 
+기본적으로 IComponent를 상속받아 작성
 
 ```bash
 class SomeComponent final : public IComponent
 ```
-
-## Collider
 
 ### Collider 작성
 
