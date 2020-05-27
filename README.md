@@ -2,7 +2,7 @@
 
 ## 공통
 
-기본적으로 모든 객체는 new를 사용하여 객체화
+모든 객체는 new를 사용하여 객체화
 
 모든 Scene은 IScene을 상속받아 작성
 
@@ -53,7 +53,7 @@ class SomeComponent final : public IComponent
 
 ### Collider 작성
 
-기본적으로 Collider를 상속받아 작성
+Collider를 상속받아 작성
 
 ```bash
 class SomeCollider final : public Collider
