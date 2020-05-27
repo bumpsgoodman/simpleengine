@@ -3,7 +3,9 @@
 ## 공통
 
 기본적으로 모든 객체는 new를 사용하여 객체화
+
 모든 Scene은 IScene을 상속받아 작성
+
 모든 Component는 IComponent를 상속받아 작성
 
 ## Scene
