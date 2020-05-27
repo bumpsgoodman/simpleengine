@@ -6,7 +6,7 @@
 
 ### Scene 작성
 
-기본적으로 IScene을 상속받아 사용
+기본적으로 IScene을 상속받아 작성
 
 ```bash
 class SomeScene final : public IScene
@@ -47,10 +47,27 @@ obj->AddComponent(someComponent);
 
 ### Component 작성
 
-기본적으로 IComponent를 상속받아 사용
+기본적으로 IComponent를 상속받아 
 
 ```bash
 class SomeComponent final : public IComponent
+```
+
+## Collider
+
+### Collider 작성
+
+기본적으로 Collider를 상속받아 작성
+
+```bash
+class SomeCollider final : public Collider
+```
+
+OnTriggerEnter(), OnTriggerExit(), OnTriggerStay() 함수만 오버로딩 후 작성
+```bash
+void SomeCollider::OnTriggerEnter() { }
+void SomeCollider::OnTriggerExit() { }
+void SomeCollider::OnTriggerStay() { }
 ```
 
 ## 프로그램 종료
