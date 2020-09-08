@@ -14,7 +14,7 @@
 ```bash
 class SomeScene final : public IScene
 ```
-Init(), Clear() 함수만 오버로딩 후 작성
+Init(), Clear() 함수만 오버라이딩 후 작성
 ```bash
 void SomeScene::Init() { }
 void SomeScene::Clear() { }
@@ -59,7 +59,7 @@ Collider를 상속받아 작성
 class SomeCollider final : public Collider
 ```
 
-OnTriggerEnter(), OnTriggerExit(), OnTriggerStay() 함수만 오버로딩 후 작성
+OnTriggerEnter(), OnTriggerExit(), OnTriggerStay() 함수만 오버라이딩 후 작성
 ```bash
 void SomeCollider::OnTriggerEnter() { }
 void SomeCollider::OnTriggerExit() { }
