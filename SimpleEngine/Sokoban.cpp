@@ -127,13 +127,13 @@ void Sokoban::initMaze()
 		dx++;
 	}
 
-	addChildForVect(wallVect);
-	addChildForVect(boxVect);
-	addChildForVect(goalVect);
-	addChildForVect(playerVect);
+	addChildToScene(wallVect);
+	addChildToScene(boxVect);
+	addChildToScene(goalVect);
+	addChildToScene(playerVect);
 }
 
-void Sokoban::addChildForVect(std::vector<GameObject*>& vect)
+void Sokoban::addChildToScene(std::vector<GameObject*>& vect)
 {
 	for (auto& gameObject : vect)
 	{

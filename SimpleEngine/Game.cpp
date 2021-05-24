@@ -26,7 +26,7 @@ void Game::Start()
 {
 	init();
 	
-	int prevTime = GetTickCount();
+	int prevTime = GetTickCount64();
 	int fps = 0;
 
 	while (1)
@@ -35,7 +35,7 @@ void Game::Start()
 		update();
 		draw();
 
-		int curTime = GetTickCount();
+		int curTime = GetTickCount64();
 		if (curTime - prevTime >= 1000)
 		{
 			std::wstring fpsString = std::to_wstring(fps);

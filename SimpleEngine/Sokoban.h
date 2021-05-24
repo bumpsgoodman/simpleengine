@@ -16,5 +16,5 @@ public:
 private:
 	void initMaze();
 
-	void addChildForVect(std::vector<GameObject*>& vect);
+	void addChildToScene(std::vector<GameObject*>& vect);
 };
